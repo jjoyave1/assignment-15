@@ -21,11 +21,13 @@ html {
   display: block;
   margin-right: 2.35765%;
   width: 48.82117%;
+  margin-left: 22.17749%;
   background-color: transparent;
   display: block;
   position: relative;
   border: solid 0px green;
-  border-radius: 4px; }
+  border-radius: 4px;
+  margin-top: 65px; }
   .todoWrapper:last-child {
     margin-right: 0; }
   .todoWrapper input {
@@ -100,7 +102,7 @@ ul {
 li {
   margin: 2px 0 2px 0;
   font-family: 'Arial', sans-serif;
-  font-size: 0.7em;
+  font-size: 0.85em;
   display: block;
   border: solid 0px #520603;
   border-radius: 4px;
@@ -110,3 +112,13 @@ li {
   text-align: center;
   overflow: hidden;
   text-overflow: wrap; }
+
+@media (min-width: 900px) {
+  .todoWrapper {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 82.94039%;
+    margin-left: 17.05961%; }
+    .todoWrapper:last-child {
+      margin-right: 0; } }

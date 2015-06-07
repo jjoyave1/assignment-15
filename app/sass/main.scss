@@ -15,11 +15,13 @@ $red: #FF2A1A;
 
 .todoWrapper {
   @include span-columns(6);
+  @include shift(2.6);
   background-color: transparent;
   display: block;
   position: relative;
   border: solid 0px green;
   border-radius: 4px;
+  margin-top: 65px;
 
   input {
     // opacity: 0.85;
@@ -89,7 +91,7 @@ ul {
 li {
   margin: 2px 0 2px 0;
   font-family: 'Arial', sans-serif;
-  font-size: 0.7em;
+  font-size: 0.85em;
   display: block;
   border: solid 0px $drkRed;
   border-radius: 4px;
@@ -100,3 +102,11 @@ li {
   overflow: hidden;
   text-overflow: wrap;
 }
+
+@media (min-width: 900px) {
+  .todoWrapper {
+    @include span-columns(10);
+    @include shift(2);
+  }
+}
+

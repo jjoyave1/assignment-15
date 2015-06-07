@@ -4,7 +4,7 @@
 
   var Todo = function(task) {
     this.task = task;
-    this.status = (task.status !== undefined ? task.status : 'working');
+    this.status = (task.status !== undefined ? task.status : 'undone');
   };
 
   var bin = {
@@ -33,7 +33,10 @@
 
 // });
 
-$('#td-lnk').click(function(){
+$('section').on('click','li', function(){
   console.log('someone has clicked');
-  $(this).css('text-decoration', 'line-through');
+  $(this).css('background-color', '#520603');
+  $(this).css('opacity', '0.7');
+  $(this).parent().css('text-decoration', 'line-through');
+  $(this).status = 'done';
 });
