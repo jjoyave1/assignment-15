@@ -1,6 +1,6 @@
-// (function () {
+(function () {
 
-//   'use strict';
+  'use strict';
 
   var Todo = function(task) {
     this.task = task;
@@ -31,7 +31,7 @@
 
   });
 
-// });
+});
 
 $('section').on('click','li', function(){
   console.log('someone has clicked');
