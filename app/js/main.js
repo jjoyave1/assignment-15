@@ -33,10 +33,21 @@
 
 // });
 
-$('section').on('click','li', function(){
-  console.log('someone has clicked');
+
+
+//prototype function
+
+$.fn.fadeOut = function(){
+
   $(this).css('background-color', '#520603');
+
   $(this).css('opacity', '0.7');
+
   $(this).parent().css('text-decoration', 'line-through');
+
   $(this).status = 'done';
+};
+
+$('section').on('click','li', function(){
+  $(this).fadeOut();
 });
