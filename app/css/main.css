@@ -111,7 +111,8 @@ li {
   height: 26px;
   text-align: center;
   overflow: hidden;
-  text-overflow: wrap; }
+  text-overflow: wrap;
+  color: #FFFFFF; }
 
 @media (min-width: 900px) {
   .todoWrapper {
