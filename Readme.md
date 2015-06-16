@@ -1,3 +1,7 @@
-#JOE JOYAVE TO-DO LIST APP
 
-This is a simple to-do list app, with large buttons which light up or dim on touch according to whether task is done.
+
+#Joe Joyave's Repo - a Simple To-Do List app
+
+thanks goes to handlebars, jQuery, Sass, bourbon, and neat
+
+this is a pretty straight forward applet in which you add or remove todos from a list.
