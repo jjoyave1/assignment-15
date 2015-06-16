@@ -20,5 +20,12 @@
     "underscore": "~1.8.3",
     "normalize.css": "~3.0.3",
     "handlebars": "~3.0.3"
+<<<<<<< HEAD
+=======
+  },
+  "devDependencies": {
+    "mocha": "~2.2.5",
+    "chai": "~3.0.0"
+>>>>>>> 7185abedb280fe51e96cb76d13b9558bd51f9dea
   }
 }
