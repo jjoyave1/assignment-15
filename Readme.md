@@ -1,7 +1,9 @@
 
-#Joe Joyave's Repo - a Simple To-Do List app
+##A Simple To-Do List app
 
-thanks goes to handlebars, jQuery, Sass, bourbon, and neat
+this is a responsive app in which you add or remove to-dos from a list.
 
-this is a pretty straight forward applet in which you add or remove todos from a list.
+
+Thanks goes to handlebars, jQuery, Sass, bourbon, and neat
+
 
