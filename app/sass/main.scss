@@ -5,8 +5,6 @@ $white: #FFFFFF;
 $inputColor: #020202;
 $drkRed: #520603;
 $red: #FF2A1A;
-// $green: #00D02C;
-// $drkGreen: #00506D;
 
 *{
   background-color: grey;
@@ -14,8 +12,8 @@ $red: #FF2A1A;
 }
 
 .todoWrapper {
-  @include span-columns(6);
-  @include shift(2.6);
+  @include span-columns(8);
+  @include shift(2);
   background-color: transparent;
   display: block;
   position: relative;
@@ -104,7 +102,7 @@ li {
   color: $white;
 }
 
-@media (min-width: 900px) {
+@media (max-width: 900px) {
   .todoWrapper {
     @include span-columns(10);
     @include shift(2);

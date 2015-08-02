@@ -20,8 +20,8 @@ html {
   float: left;
   display: block;
   margin-right: 2.35765%;
-  width: 48.82117%;
-  margin-left: 22.17749%;
+  width: 65.88078%;
+  margin-left: 17.05961%;
   background-color: transparent;
   display: block;
   position: relative;
@@ -114,7 +114,7 @@ li {
   text-overflow: wrap;
   color: #FFFFFF; }
 
-@media (min-width: 900px) {
+@media (max-width: 900px) {
   .todoWrapper {
     float: left;
     display: block;

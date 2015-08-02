@@ -1,35 +1,34 @@
 
+var Todo = function(task) {
+  this.task = task;
+  this.status = (task.status !== undefined ? task.status : 'undone');
+};
 
-  var Todo = function(task) {
-    this.task = task;
-    this.status = (task.status !== undefined ? task.status : 'undone');
-  };
+var bin = {
+  "data": ""
+};
 
-  var bin = {
-    "data": ""
-  };
+var storage = [];
+var $todoForm = $('#todo-form');
 
-  var storage = [];
-  var $todoForm = $('#todo-form');
+bin.data = storage;
 
-  bin.data = storage;
+$todoForm.on('submit', function(item) {
 
-  $todoForm.on('submit', function(item) {
+  item.preventDefault();
 
-    item.preventDefault();
+  var listItem = $('#todo-input').val();
+  var startTask = new Todo(listItem);
 
-    var listItem = $('#todo-input').val();
-    var startTask = new Todo(listItem);
+  storage.push(startTask);
 
-    storage.push(startTask);
+  this.reset();
 
-    this.reset();
+  $('section').html(template.todolist(bin));
 
-    $('section').html(template.todolist(bin));
+  declarePrototype();
 
-  });
-
-// });
+});
 
 
 $('section').on('click','li', function(){
@@ -39,9 +38,17 @@ $('section').on('click','li', function(){
   $(this).parent().css('text-decoration', 'line-through');
   $(this).status = 'done';
 
+});
 
 
-//prototype function
+//prototype functions
+
+function declarePrototype() {
+  if (storage.length > 8) {
+    Todo.prototype.isEmergent = true;
+    console.log("MAN that's a lot of stuff");
+  }
+}
 
 $.fn.fadeOut = function(){
 
@@ -56,5 +63,4 @@ $.fn.fadeOut = function(){
 
 $('section').on('click','li', function(){
   $(this).fadeOut();
-
 });
